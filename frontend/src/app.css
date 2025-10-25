@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@layer base {
+	:root {
+		color-scheme: light;
+		font-family: 'Inter', 'SF Pro Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
+		background-color: #f8fafc;
+	}
+
+	html,
+	body {
+		@apply min-h-screen bg-slate-100 text-slate-900 antialiased;
+	}
+
+	body {
+		@apply m-0;
+	}
+}
