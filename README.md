@@ -8,3 +8,6 @@ It follows a simple philosophy: just keep it simple.
 
 
 The storage of the notes is only saved in the browser’s local storage for now.
+
+
+<img width="1899" height="926" alt="image" src="https://github.com/user-attachments/assets/28987574-606d-43b5-8523-47c943485e80" />
