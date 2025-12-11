@@ -46,11 +46,11 @@
 	$: currentBoardTasks = $taskStore.filter((task: Task) => task.boardId === currentBoardId);
 	$: sortedTasks = [...currentBoardTasks].sort((a: Task, b: Task) => {
 		if (a.status !== b.status) {
-			const statusOrder = { active: 0, in_progress: 1, done: 2 };
+			const statusOrder = { active: 0, in_progress: 0, done: 1 };
 			return statusOrder[a.status] - statusOrder[b.status];
 		}
 
-		return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+		return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
 	});
 
 	$: visibleTasks = $settingsStore.showCompleted
