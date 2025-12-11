@@ -499,6 +499,7 @@
 											bind:value={editingTitle}
 											class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-900 outline-none transition focus:border-emerald-300 focus:ring-emerald-200/60"
 											on:click|stopPropagation
+											on:keydown|stopPropagation
 										/>
 									{:else}
 										<span
@@ -528,6 +529,7 @@
 											rows="2"
 											class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 outline-none transition focus:border-emerald-300 focus:ring-emerald-200/60"
 											on:click|stopPropagation
+											on:keydown|stopPropagation
 										></textarea>
 									{:else}
 										<span
